@@ -1,0 +1,33 @@
+body {
+  font-family: monospace;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 2em;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.ascii-art {
+  white-space: pre;
+  font-size: 0.9em;
+  color: #000;
+}
+
+.info {
+  line-height: 1.6;
+  font-size: 1em;
+}
+
+a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
