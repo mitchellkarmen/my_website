@@ -14,17 +14,20 @@ body {
 .container {
   max-width: 90vw;
   width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ascii-art {
   white-space: pre;
-  font-size: 20px; /* increased from 14px — adjust as desired */
+  font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.05em;
   overflow-x: auto;
-  display: inline-block;
+  display: block;
   margin-bottom: 1em;
-  transform-origin: top center;
+  text-align: center;
 }
 
 .info {
@@ -45,7 +48,7 @@ a:hover {
 /* Large screens */
 @media (min-width: 601px) {
   .ascii-art {
-    font-size: 20px; /* match the base size */
+    font-size: 20px;
     line-height: 1.2;
     letter-spacing: normal;
   }
@@ -58,16 +61,17 @@ a:hover {
 /* Tablets and small laptops */
 @media (max-width: 768px) {
   .ascii-art {
-    transform: scale(0.7);
-    margin-bottom: -2em;
+    font-size: 11px;
+    margin-bottom: 1em;
   }
 }
 
 /* Mobile devices */
 @media (max-width: 600px) {
   .ascii-art {
-    transform: scale(0.5);
-    margin-bottom: -3.5em;
+    font-size: 8px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
   }
 
   .info {
@@ -78,7 +82,8 @@ a:hover {
 /* Small mobile devices */
 @media (max-width: 400px) {
   .ascii-art {
-    transform: scale(0.38);
-    margin-bottom: -4.5em;
+    font-size: 6px;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
   }
 }
