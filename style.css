@@ -18,7 +18,7 @@ body {
 
 .ascii-art {
   white-space: pre;
-  font-size: 14px; /* fixed base size for consistency */
+  font-size: 20px; /* increased from 14px — adjust as desired */
   line-height: 1.2;
   letter-spacing: 0.05em;
   overflow-x: auto;
@@ -42,9 +42,10 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Large screens */
 @media (min-width: 601px) {
   .ascii-art {
-    font-size: 14px;
+    font-size: 20px; /* match the base size */
     line-height: 1.2;
     letter-spacing: normal;
   }
@@ -54,10 +55,11 @@ a:hover {
   }
 }
 
+/* Tablets and small laptops */
 @media (max-width: 768px) {
   .ascii-art {
     transform: scale(0.7);
-    margin-bottom: -2em; 
+    margin-bottom: -2em;
   }
 }
 
