@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mitchellkarmen.github.io/sitemap.xml
+Sitemap: https://www.mitchellkarmen.com/sitemap.xml
